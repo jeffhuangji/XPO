@@ -1,0 +1,16 @@
+name = XPO
+description = Mobile XPO
+version = 1.0
+core = 7.x
+
+regions[header] = Header
+regions[navigation] = Navigation
+regions[content] = Content
+regions[left] = Left Sidebar
+regions[right] = Rignt Sidebar
+regions[marketing] = Bottom marketing
+regions[footer] = Footer
+
+stylesheets[all][] = css/main.css
+
+scripts[] = js/xpo.js
