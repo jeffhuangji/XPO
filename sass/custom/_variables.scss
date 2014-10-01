@@ -1,0 +1,24 @@
+$xpo-blue:  #0A96E2;
+$xpo-gray:  #ABA9A8;
+$xpo-black: #252324;
+$xpo-white: #FAFAFB;
+$dark-blue: #1265B8;
+
+h1 { font-size: 60px; }
+h2 { font-size: 30px; }
+
+ul, ul li { 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $xpo-blue;
+  transition: color .5s;
+  -webkit-transition: color .5s;
+  &:hover {
+    text-decoration: none;
+    color: darken($xpo-blue, 20%);
+  }
+}

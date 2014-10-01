@@ -18,14 +18,14 @@
       <div id="main" class="clearfix">
 
         <?php if ($page['left']): ?>
-          <div id="sidebar-left" class="sidebar col-md-3">
+          <div id="sidebar-left" class="sidebar col-md-2">
             <div>
               <?php print render($page['left']); ?>
             </div>
           </div>
         <?php endif; ?>
 
-        <div id="content" class="col-md-6">
+        <div id="content" class="col-md-8">
           <?php print render($title_prefix); ?>
           <?php if ($title && !$is_front): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
           <?php print render($title_suffix); ?>
@@ -39,7 +39,7 @@
 
 
         <?php if ($page['right']): ?>
-          <div id="sidebar-right" class="sidebar col-md-3">
+          <div id="sidebar-right" class="sidebar col-md-2">
             <?php print render($page['right']); ?>
           </div>
         <?php endif; ?>
