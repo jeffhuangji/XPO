@@ -1,0 +1,17 @@
+.region-navigation {
+  background: $xpo-blue;
+}
+
+.site-menu {
+  ul.menu li {
+    display: inline-block;
+    line-height: 50px;
+    padding-right: 30px;
+    a {
+      color: rgba(255, 255, 255, 0.8);
+      &.active, &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}

@@ -1,22 +1,22 @@
   <div id="page-wrapper">
-  <div id="page" class="container">
-
-    <div id="header" class="row">
-      <div class="col-md-12 clearfix">
+    <?php print render($page['navigation']); ?>
+    
+    <div id="page">
+    <div id="header" class="container">
+      <div class="row clearfix">
         <?php print render($page['header']); ?>
-        <?php print render($page['navigation']); ?>
       </div>
     </div> 
 
-    <?php if ($breadcrumb): ?>
-      <div id="breadcrumb" class="row"><?php print $breadcrumb; ?></div>
-    <?php endif; ?>
 
     <?php print $messages; ?>
 
-    <div id="main-wrapper" class="row">
-      <div id="main" class="clearfix">
+    <div id="main-wrapper">
+      <?php if ($breadcrumb): ?>
+        <div id="breadcrumb" class="container"><?php print $breadcrumb; ?></div>
+      <?php endif; ?>
 
+      <div id="main" class="container clearfix">
         <?php if ($page['left']): ?>
           <div id="sidebar-left" class="sidebar col-md-2">
             <div>
@@ -47,11 +47,11 @@
       </div>
     </div>
 
-    <div id="marketing" class="row">
+    <div id="marketing" class="container">
       <?php print render($page['marketing']); ?>
     </div>
 
-    <div id="footer" class="row">
+    <div id="footer" class="container">
       <?php print render($page['footer']); ?>
     </div>
 
