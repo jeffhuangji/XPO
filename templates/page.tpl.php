@@ -8,8 +8,8 @@
           <p><a href="/" title="Home"><img src="/sites/all/themes/xpo/images/logo.png" style="width:190px" /></a>
           <span class="site-slogan"><?php print $site_slogan; ?></span></p>
         </div>
-        <?php print render($page['header']); ?>
       </div>
+      <?php print render($page['header']); ?>
     </div> 
 
 

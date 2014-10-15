@@ -6,3 +6,31 @@
 #content {
   padding: 0 40px;
 }
+
+.logo p, .logo .site-slogan {
+  vertical-align: bottom;
+}
+
+.logo .site-slogan {
+  font-size: 1.4em;
+  color: #ABA9A8;
+}
+
+#search-block-form #edit-submit {
+  display: none;
+}
+
+#search-block-form #edit-search-block-form--2 {
+  background: url('/sites/all/themes/xpo/images/search.png') 90% 50% no-repeat transparent;
+  height: 30px;
+  border: 1px solid #ABA9A8;
+  border-radius: 12px;
+  box-shadow: none;
+  width: 100%;
+  padding-right: 20px;
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 10px #0A96E2;
+    border-color: #0A96E2;
+  }
+}
