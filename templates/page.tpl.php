@@ -23,9 +23,12 @@
       <div id="main" class="container clearfix">
         <?php if ($page['left']): ?>
           <div id="sidebar-left" class="sidebar col-md-2">
-            <div>
-              <?php print render($page['left']); ?>
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
+            <?php print render($page['left']); ?>
           </div>
         <?php endif; ?>
 

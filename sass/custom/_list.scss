@@ -38,3 +38,10 @@ ul.list {
     .views-field-title { font-weight: bold; }
   }
 }
+
+// breakpoint 2 & 3 
+@media (max-width: $screen-md) {
+  .phone-list li.phone {
+    width: 100%;
+  }
+}
