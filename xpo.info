@@ -13,4 +13,5 @@ regions[footer] = Footer
 
 stylesheets[all][] = css/main.css
 
+scripts[] = js/bootstrap.min.js
 scripts[] = js/xpo.js
