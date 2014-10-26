@@ -99,7 +99,6 @@ $carrier_logo = $content['field_carrier_logo'];
   <?php endif; ?>
   <?php print render($title_suffix); ?>
 
-
   <div class="content"<?php print $content_attributes; ?>>
     <div class="row">
       <div class="col-md-4"><?php print render($carrier_logo); print render($pics); ?></div>
@@ -113,24 +112,32 @@ $carrier_logo = $content['field_carrier_logo'];
          </div>
       </div>
     </div>
+    
+    <!-- Google AdSense -->
+    <?php 
+    // $block = block_load('bladsense_managedock', '3');
+    // $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
+    // print $output;
+    ?>
+
     <div class="tabs">
       <ul class="nav nav-tabs" role="tablist">
+        <li><a href="#general" role="tab" data-toggle="tab">General</a></li>
         <li class="active"><a href="#feature" role="tab" data-toggle="tab">Features</a></li>
         <li><a href="#spec" role="tab" data-toggle="tab">Specs</a></li>
         <li><a href="#review" role="tab" data-toggle="tab">Reviews</a></li>
       </ul>
 
       <div class="tab-content">
+        <div class="tab-pane" id="general">
+          <?php print render($brand); ?>
+          <?php print render($carrier); ?>
+          <?php print render($category); ?>    
+        </div>
         <div class="tab-pane active" id="feature"><?php print render($feature); ?></div>
         <div class="tab-pane" id="spec"><?php print render($spec); ?></div>
         <div class="tab-pane" id="review"><?php print render($review); ?></div>
       </div>
-    </div>
-
-    <div class="others">
-      <?php print render($brand); ?>
-      <?php print render($carrier); ?>
-      <?php print render($category); ?>
     </div>
   </div>
 
