@@ -108,8 +108,6 @@ $carrier_logo = isset($content['field_carrier_logo']) ? $content['field_carrier_
           // print $title;
           print render($price);
          ?>
-         <div class="read-more">
-         </div>
       </div>
     </div>
     
@@ -137,7 +135,14 @@ $carrier_logo = isset($content['field_carrier_logo']) ? $content['field_carrier_
         </div>
         <div class="tab-pane" id="feature"><?php print render($feature); ?></div>
         <div class="tab-pane" id="spec"><?php print render($spec); ?></div>
-        <div class="tab-pane" id="review"><?php print render($review); ?></div>
+        <div class="tab-pane" id="review">
+          <?php 
+            print render($review); 
+            print render($content['comments']);
+            print $comment;
+            print "User reviews:";
+          ?>
+        </div>
       </div>
     </div>
   </div>
