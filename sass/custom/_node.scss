@@ -3,9 +3,23 @@
     float: left;
     margin-right: 20px;
   }
+  .tabs {
+    margin-top: 20px;
+  }
   .tab-content {
     background: #fff;
     padding: 20px;
     border-radius: 0 0 10px 10px;
+  }
+  .field-name-field-price-table table {
+    @extend .table;
+    margin-top: 20px;
+    td, th { 
+      padding: 8px; 
+      border-bottom: 1px solid #ccc;
+    }
+    tr:hover {
+      background: $xpo-white;
+    }
   }
 }
