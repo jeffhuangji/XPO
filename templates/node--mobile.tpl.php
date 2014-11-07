@@ -137,13 +137,18 @@ $carrier_logo = isset($content['field_carrier_logo']) ? $content['field_carrier_
         <div class="tab-pane" id="spec"><?php print render($spec); ?></div>
         <div class="tab-pane" id="review">
           <?php 
-            print render($review); 
-            print render($content['comments']);
-            print $comment;
-            print "User reviews:";
+            print render($review);
+            print render($content['rate_mobile_rate']);
           ?>
         </div>
       </div>
+      <h4>Comments:</h4>
+      <?php print render($content['comments']); ?>
+      <pre>
+        <?php 
+        // print_r($content);
+         ?>
+      </pre>
     </div>
   </div>
 
