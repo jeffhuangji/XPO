@@ -85,7 +85,6 @@ $price = isset($content['field_price_table']) ? $content['field_price_table'] : 
 $desc = isset($content['body']) ? $content['body'] : '';
 $feature = isset($content['field_phone_feature']) ? $content['field_phone_feature'] : '';
 $spec = isset($content['field_specs']) ? $content['field_specs'] : '';
-$review = isset($content['field_reviews']) ? $content['field_reviews'] : '';
 $brand = isset($content['field_brand']) ? $content['field_brand'] : '';
 $carrier = isset($content['field_carrier']) ? $content['field_carrier'] : '';
 $category = isset($content['field_features']) ? $content['field_features'] : '';
@@ -137,18 +136,11 @@ $carrier_logo = isset($content['field_carrier_logo']) ? $content['field_carrier_
         <div class="tab-pane" id="spec"><?php print render($spec); ?></div>
         <div class="tab-pane" id="review">
           <?php 
-            print render($review);
             print render($content['rate_mobile_rate']);
+            print render($content['comments']);
           ?>
         </div>
       </div>
-      <h4>Comments:</h4>
-      <?php print render($content['comments']); ?>
-      <pre>
-        <?php 
-        // print_r($content);
-         ?>
-      </pre>
     </div>
   </div>
 
