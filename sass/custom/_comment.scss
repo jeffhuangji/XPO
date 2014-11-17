@@ -7,3 +7,28 @@
     }
   }
 }
+
+.star {
+  color: gold;
+}
+
+.comment-wrapper {
+  h2 { font-size: 22px; }
+  .submitted .permalink { display: none; }
+}
+
+.comment-new {
+  position: relative;
+  .new {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    text-shadow: gold 0 0 11px;
+    color: gold;
+    font-weight: bold;
+    font-size: 10px;
+  }
+  h3 {
+    padding-left: 25px;
+  }
+}

@@ -107,16 +107,14 @@ $carrier_logo = isset($content['field_carrier_logo']) ? $content['field_carrier_
           // print $title;
           print render($price);
          ?>
+         <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="recommend-link">
+          <label>Recommend: </label>
+          <div class="addthis_sharing_toolbox"></div>
+        </div>
       </div>
     </div>
     
-    <!-- Google AdSense -->
-    <?php 
-    // $block = block_load('bladsense_managedock', '3');
-    // $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
-    // print $output;
-    ?>
-
     <div class="tabs">
       <ul class="nav nav-tabs" role="tablist">
         <li class="active"><a href="#general" role="tab" data-toggle="tab">General</a></li>
@@ -136,7 +134,6 @@ $carrier_logo = isset($content['field_carrier_logo']) ? $content['field_carrier_
         <div class="tab-pane" id="spec"><?php print render($spec); ?></div>
         <div class="tab-pane" id="review">
           <?php 
-            // print render($content['rate_mobile_rate']);
             print render($content['comments']);
           ?>
         </div>
