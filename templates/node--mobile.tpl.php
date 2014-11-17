@@ -136,7 +136,7 @@ $carrier_logo = isset($content['field_carrier_logo']) ? $content['field_carrier_
         <div class="tab-pane" id="spec"><?php print render($spec); ?></div>
         <div class="tab-pane" id="review">
           <?php 
-            print render($content['rate_mobile_rate']);
+            // print render($content['rate_mobile_rate']);
             print render($content['comments']);
           ?>
         </div>
