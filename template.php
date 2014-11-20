@@ -38,3 +38,8 @@ function xpo_breadcrumb($breadcrumb) {
     return '<div class="breadcrumb">'. implode(' &raquo; ', $breadcrumb) .'</div>';
   }
 }
+
+function xpo_preprocess_comment(&$variables) {
+  // Remove all HTML tags from the title
+  $variables['title'] = strip_tags($variables['title']);
+}

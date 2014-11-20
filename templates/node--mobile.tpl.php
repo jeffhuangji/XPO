@@ -85,6 +85,7 @@ $price = isset($content['field_price_table']) ? $content['field_price_table'] : 
 $desc = isset($content['body']) ? $content['body'] : '';
 $feature = isset($content['field_phone_feature']) ? $content['field_phone_feature'] : '';
 $spec = isset($content['field_specs']) ? $content['field_specs'] : '';
+$tips = isset($content['field_buying_tips']) ? $content['field_buying_tips'] : '';
 $brand = isset($content['field_brand']) ? $content['field_brand'] : '';
 $carrier = isset($content['field_carrier']) ? $content['field_carrier'] : '';
 $category = isset($content['field_features']) ? $content['field_features'] : '';
@@ -120,6 +121,7 @@ $carrier_logo = isset($content['field_carrier_logo']) ? $content['field_carrier_
         <li class="active"><a href="#general" role="tab" data-toggle="tab">General</a></li>
         <li><a href="#feature" role="tab" data-toggle="tab">Features</a></li>
         <li><a href="#spec" role="tab" data-toggle="tab">Specs</a></li>
+        <li><a href="#tips" role="tab" data-toggle="tab">Buying Tips</a></li>
         <li><a href="#review" role="tab" data-toggle="tab">Reviews</a></li>
       </ul>
 
@@ -132,6 +134,7 @@ $carrier_logo = isset($content['field_carrier_logo']) ? $content['field_carrier_
         </div>
         <div class="tab-pane" id="feature"><?php print render($feature); ?></div>
         <div class="tab-pane" id="spec"><?php print render($spec); ?></div>
+        <div class="tab-pane" id="tips"><?php print render($tips); ?></div>
         <div class="tab-pane" id="review">
           <?php 
             print render($content['comments']);

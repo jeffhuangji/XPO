@@ -23,3 +23,17 @@
     }
   }
 }
+
+.view-id-taxonomy_term {
+  .field-name-field-logo { float: left; }
+  .field-name-field-logo .field-label { 
+    display: none;
+  }
+  .view-content {
+    clear: both;
+  }
+}
+
+.page-taxonomy {
+  #page-title { display: none;}
+}
