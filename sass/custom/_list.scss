@@ -36,6 +36,14 @@ ul.list {
     float: left;
     .views-field-field-image { float: left; margin-right: 10px; }
     .views-field-title { font-weight: bold; }
+    .views-field-field-rear-camera, 
+    .views-field-field-screen-size,
+    .views-field-field-operating-system {
+      font-size: 12px;
+      color: #666;
+      .views-label { font-weight: bold; }
+      .field-content { display: inline-block; }
+    }
   }
 }
 
